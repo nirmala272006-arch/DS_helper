@@ -21,5 +21,3 @@ def detect_column_types(df: pd.DataFrame, threshold: int = 20):
         else:
             column_types[col] = "categorical"
     return column_types
-df=pd.read_csv(r"C:\Users\marc\Downloads\Titanic-Dataset.csv")
-print(detect_column_types(df))
