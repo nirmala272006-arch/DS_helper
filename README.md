@@ -7,38 +7,38 @@ Installation
 Install the package using pip:
 
 pip install ds-helper
-Usage
+Usagehttps://github.com/nirmala272006-arch/DS_helper/edit/main/README.md
 Auto Visualizer
 import pandas as pd
 from ds_helper.auto_visualizer import plot_numerical, plot_categorical, plot_text, plot_pairplot
 
-# Load your data
+ Load your data
 df = pd.read_csv('your_data.csv')
 
-# Visualize numerical columns
+ Visualize numerical columns
 plot_numerical(df)
 
-# Visualize categorical columns
+ Visualize categorical columns
 plot_categorical(df)
 
-# Visualize text columns
+Visualize text columns
 plot_text(df)
 
-# Create pairplot for numerical columns
+Create pairplot for numerical columns
 plot_pairplot(df)
 Text Cleaner
 from ds_helper.text_cleaner import TextCleaner
 
-# Initialize the cleaner
+ Initialize the cleaner
 cleaner = TextCleaner(filler_words=['uh', 'um'], use_lemmatization=True)
 
-# Clean text
+#Clean text
 clean_text = cleaner.clean("This is a sample text with some filler words like uh and um.")
 print(clean_text)
 Column Detector
 from ds_helper.column_detector import detect_column_types
 
-# Detect column types
+#Detect column types
 types = detect_column_types(df, threshold=20)
 print(types)
 Dependencies
